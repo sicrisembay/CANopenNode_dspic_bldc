@@ -1,0 +1,4 @@
+mainmenu "CANopenNode_dspic_motor"
+    config TEST
+        bool "test"
+        default n
