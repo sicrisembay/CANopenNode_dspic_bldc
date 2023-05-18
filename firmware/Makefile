@@ -1,4 +1,4 @@
-PHONY := menuconfig loadconfig saveconfig
+PHONY := menuconfig defconfig saveconfig
 
 ROOT_KCONFIG := $(CURDIR)/Kconfig
 KCONFIG_CONFIG := $(CURDIR)/config/.config
@@ -9,8 +9,8 @@ export ROOT_KCONFIG KCONFIG_CONFIG DEFCONFIG_FILE
 menuconfig:
 	cd config && make menuconfig
 
-loadconfig:
-	cd config && make loadconfig
+defconfig:
+	cd config && make defconfig
 
 saveconfig:
 	cd config && make saveconfig

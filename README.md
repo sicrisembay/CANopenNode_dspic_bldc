@@ -28,7 +28,24 @@ pip install windows-curses
 
 7. In msys2, install the following
 ```
-$ pacman -S make
-$ pacman -S python
+pacman -S make
+pacman -S python
 ```
+
+## Build Steps
+
+Clone this repository
+```
+git clone --recursive https://github.com/sicrisembay/CANopenNode_dspic_bldc.git
+```
+
+Generate the configuration file
+```
+cd CANopenNode_dspic_bldc
+cd firmware
+make defconfig
+```
+
+Using MPLABX IDE, open the project and build.
+
 

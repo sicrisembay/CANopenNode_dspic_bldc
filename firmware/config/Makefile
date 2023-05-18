@@ -6,7 +6,7 @@ menuconfig: create_folder
 	menuconfig.py $(ROOT_KCONFIG)
 	cd $(KCONFIG_OUTPUT_LOC) && genconfig.py $(ROOT_KCONFIG) && mv config.h autoconf.h
 
-loadconfig: create_folder
+defconfig: create_folder
 	defconfig.py --kconfig $(ROOT_KCONFIG) $(DEFCONFIG_FILE)
 	cd $(KCONFIG_OUTPUT_LOC) && genconfig.py $(ROOT_KCONFIG) && mv config.h autoconf.h
 

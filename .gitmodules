@@ -1,3 +1,9 @@
 [submodule "firmware/third_party/FreeRTOS"]
 	path = firmware/third_party/FreeRTOS
 	url = https://github.com/sicrisembay/FreeRTOS-Kernel.git
+[submodule "firmware/third_party/CANopenNode/CANopenNode"]
+	path = firmware/third_party/CANopenNode/CANopenNode
+	url = https://github.com/sicrisembay/CANopenNode.git
+[submodule "firmware/third_party/libfixmath"]
+	path = firmware/third_party/libfixmath
+	url = https://github.com/sicrisembay/libfixmath.git

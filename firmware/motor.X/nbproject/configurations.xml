@@ -82,7 +82,6 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-        <itemPath>../third_party/FreeRTOS/croutine.c</itemPath>
         <itemPath>../third_party/FreeRTOS/event_groups.c</itemPath>
         <itemPath>../third_party/FreeRTOS/list.c</itemPath>
         <itemPath>../third_party/FreeRTOS/queue.c</itemPath>
@@ -111,7 +110,7 @@
         <targetDevice>dsPIC33FJ128MC706A</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>PK3OBPlatformTool</platformTool>
         <languageToolchain>XC16</languageToolchain>
         <languageToolchainVersion>2.10</languageToolchainVersion>
         <platform>3</platform>
