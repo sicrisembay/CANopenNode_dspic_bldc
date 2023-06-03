@@ -3,8 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/02_workspace/01_git/CANopenNode_dspic_bldc/firmware/app/main.c</file>
-            <file>file:/F:/02_workspace/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/include/task.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_timer.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_uart.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/tasks.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/stream_buffer.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_adc.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/config/PinConfig.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_pwm.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/config/global_def.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/main.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_pwm.h</file>
         </group>
     </open-files>
 </project-private>

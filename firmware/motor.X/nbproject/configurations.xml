@@ -7,6 +7,10 @@
         <itemPath>../app/bldc/bldc.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f4" displayName="driver" projectFiles="true">
+        <logicalFolder name="f1" displayName="spi" projectFiles="true">
+          <itemPath>../app/driver/spi/drv_spi.c</itemPath>
+          <itemPath>../app/driver/spi/drv_spi.h</itemPath>
+        </logicalFolder>
         <itemPath>../app/driver/drv_timer.c</itemPath>
         <itemPath>../app/driver/drv_timer.h</itemPath>
         <itemPath>../app/driver/drv_adc.c</itemPath>
@@ -110,10 +114,10 @@
         <targetDevice>dsPIC33FJ128MC706A</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>PK3OBPlatformTool</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC16</languageToolchain>
         <languageToolchainVersion>2.10</languageToolchainVersion>
-        <platform>3</platform>
+        <platform>2</platform>
       </toolsSet>
       <packs>
         <pack name="dsPIC33F-GP-MC_DFP" vendor="Microchip" version="1.3.64"/>
@@ -123,7 +127,7 @@
       <compileType>
         <linkerTool>
           <linkerLibItems>
-            <linkerLibFileItem>C:/Program Files/Microchip/xc16/v2.10/lib/libq-dsp-elf.a</linkerLibFileItem>
+            <linkerLibFileItem>/opt/microchip/xc16/v2.10/lib/libdsp-elf.a</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
         <archiverTool>
@@ -146,6 +150,8 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
+      <item path="../config/generated/autoconf.h" ex="true" overriding="false">
+      </item>
       <C30>
         <property key="cast-align" value="false"/>
         <property key="code-model" value="default"/>
@@ -164,7 +170,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="expand-pragma-config" value="false"/>
         <property key="extra-include-directories"
-                  value="..\app\bldc;..\app\driver;..\app\pcIntf;..\app\utility;..\app\utility\filter;..\config;..\third_party\FreeRTOS\include;..\third_party\FreeRTOS\portable\MPLAB\PIC24_dsPIC"/>
+                  value="..\app\bldc;..\app\driver;..\app\pcIntf;..\app\utility;..\app\utility\filter;../config;../config/generated;..\third_party\FreeRTOS\include;..\third_party\FreeRTOS\portable\MPLAB\PIC24_dsPIC"/>
         <property key="isolate-each-function" value="false"/>
         <property key="keep-inline" value="false"/>
         <property key="oXC16gcc-align-arr" value="false"/>
@@ -278,38 +284,6 @@
         <property key="relaxed-math" value="false"/>
         <property key="save-temps" value="false"/>
       </C30Global>
-      <PK3OBPlatformTool>
-        <property key="AutoSelectMemRanges" value="auto"/>
-        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
-        <property key="debugoptions.debug-startup" value="Use system settings"/>
-        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
-        <property key="lastid" value=""/>
-        <property key="memories.bootflash" value="true"/>
-        <property key="memories.configurationmemory" value="true"/>
-        <property key="memories.dataflash" value="true"/>
-        <property key="memories.eeprom" value="true"/>
-        <property key="memories.id" value="true"/>
-        <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.ranges"
-                  value="${memories.programmemory.ranges}"/>
-        <property key="memories.userotp" value="true"/>
-        <property key="poweroptions.powerenable" value="false"/>
-        <property key="programoptions.eraseb4program" value="true"/>
-        <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${programoptions.preservedataflash.ranges}"/>
-        <property key="programoptions.preserveeeprom" value="false"/>
-        <property key="programoptions.preserveeeprom.ranges"
-                  value="${programoptions.preserveeeprom.ranges}"/>
-        <property key="programoptions.preserveprogram.ranges" value=""/>
-        <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.usehighvoltageonmclr" value="false"/>
-        <property key="programoptions.uselvpprogramming" value="false"/>
-        <property key="voltagevalue" value="3.25"/>
-      </PK3OBPlatformTool>
       <Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>

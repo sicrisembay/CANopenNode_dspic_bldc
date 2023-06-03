@@ -1,0 +1,4 @@
+menuconfig ENABLE_DRV_SPI
+    bool "SPI"
+    if ENABLE_DRV_SPI
+    endif # ENABLE_DRV_SPI
