@@ -17,6 +17,7 @@
                 <sourceRootElem>../third_party/FreeRTOS</sourceRootElem>
                 <sourceRootElem>../app</sourceRootElem>
                 <sourceRootElem>../config</sourceRootElem>
+                <sourceRootElem>../third_party/FreeRTOS-Plus-CLI</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

@@ -24,6 +24,10 @@
  *
  */
 
+#include "autoconf.h"
+
+#if CONFIG_USE_CLI
+
 /* Standard includes. */
 #include <string.h>
 #include <stdint.h>
@@ -34,6 +38,8 @@
 
 /* Utils includes. */
 #include "FreeRTOS_CLI.h"
+
+#define configCOMMAND_INT_MAX_OUTPUT_SIZE	CONFIG_CLI_COMMAND_MAX_OUTPUT_SIZE
 
 /* If the application writer needs to place the buffer used by the CLI at a
 fixed address then set configAPPLICATION_PROVIDES_cOutputBuffer to 1 in
@@ -66,10 +72,11 @@ static int8_t prvGetNumberOfParameters( const char *pcCommandString );
 of the list of registered commands. */
 static const CLI_Command_Definition_t xHelpCommand =
 {
-	"help",
-	"\r\nhelp:\r\n Lists all the registered commands\r\n\r\n",
-	prvHelpCommand,
-	0
+    "help",
+    "\r\nhelp:\r\n"
+    "  Lists all the registered commands\r\n\r\n",
+    prvHelpCommand,
+    0
 };
 
 /* The definition of the list of commands.  Commands that are registered are
@@ -348,3 +355,4 @@ BaseType_t xLastCharacterWasSpace = pdFALSE;
 	return cParameters;
 }
 
+#endif /* CONFIG_USE_CLI */

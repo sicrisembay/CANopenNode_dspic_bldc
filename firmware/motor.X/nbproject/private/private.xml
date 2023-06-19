@@ -3,16 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_timer.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS-Plus-CLI/FreeRTOS_CLI.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/include/portable.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/bldc/bldc.c</file>
             <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_uart.c</file>
-            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/tasks.c</file>
-            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/stream_buffer.c</file>
-            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_adc.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/include/projdefs.h</file>
             <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/config/PinConfig.h</file>
-            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_pwm.c</file>
-            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/config/global_def.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/portable/MPLAB/PIC24_dsPIC/portmacro.h</file>
             <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/main.c</file>
-            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_pwm.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/driver/drv_uart.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS-Plus-CLI/Kconfig</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/portable/MPLAB/PIC24_dsPIC/port.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS-Plus-CLI/cli.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/include/FreeRTOS.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/tasks.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/app/pcIntf/pc_interface.c</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/portable/MPLAB/PIC24_dsPIC/portasm_dsPIC.S</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS/include/task.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/config/FreeRTOSConfig.h</file>
+            <file>file:/home/sicris/02_personal/01_repo/01_git/CANopenNode_dspic_bldc/firmware/third_party/FreeRTOS-Plus-CLI/FreeRTOS_CLI.c</file>
         </group>
     </open-files>
 </project-private>

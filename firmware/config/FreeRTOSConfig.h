@@ -26,13 +26,17 @@
 #define configCPU_CLOCK_HZ                      ( ( unsigned long ) 40000000 )  /* Fosc / 2 */
 #define configMAX_PRIORITIES                    ( 3 )
 #define configMINIMAL_STACK_SIZE                ( 160 )
-#define configTOTAL_HEAP_SIZE                   ( ( size_t ) 8192 )
 #define configMAX_TASK_NAME_LEN                 ( 8 )
 #define configUSE_TRACE_FACILITY                0
 #define configUSE_16_BIT_TICKS                  1
 #define configIDLE_SHOULD_YIELD                 1
 #define configUSE_APPLICATION_TASK_TAG          (1)
 #define configUSE_MUTEXES                       (1)
+
+/* Memory allocation related definitions */
+#define configSUPPORT_STATIC_ALLOCATION         1
+#define configSUPPORT_DYNAMIC_ALLOCATION        1
+#define configTOTAL_HEAP_SIZE                   ( ( size_t ) 4096 )
 
 /* Co-routine definitions. */
 #define configUSE_CO_ROUTINES                   0

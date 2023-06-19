@@ -1,3 +1,4 @@
 mainmenu "CANopenNode_dspic_motor"
 
 rsource app/driver/Kconfig
+rsource third_party/FreeRTOS-Plus-CLI/Kconfig

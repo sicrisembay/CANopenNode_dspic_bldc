@@ -1,0 +1,26 @@
+menuconfig USE_CLI
+    bool "Use CLI"
+    default y
+
+    if USE_CLI
+        config CLI_TASK_PRIORITY
+            int "Task Priority"
+            default 1
+
+        config CLI_TASK_STACK_SZ
+            int "Task Stack Size"
+            default 256
+
+        config CLI_COMMAND_MAX_OUTPUT_SIZE
+            int "Buffer size for CLI output"
+            default 256
+
+        config CLI_COMMAND_MAX_INPUT_SIZE
+            int "Buffer size for CLI input"
+            default 256
+
+        config CLI_ECHO_INPUT
+            bool "Echo"
+            default n
+
+    endif # USE_CLI

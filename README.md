@@ -4,8 +4,8 @@ This repository contains my hobby project on BLDC motor on a dsPIC33 microcontro
 ### Development Environment
 This is my development setup in my house.
    * Hardware: Cerebot MC7 (Note: Board has built-in licensed debugger)
-   * OS: Win10
-   * IDE: MPLABX v5.45 (latest version of IDE does not support anymor licensed debugger)
+   * OS: Linux, Ubuntu 22.04.2 LTS
+   * IDE: MPLABX v5.45 (latest version of IDE does not support anymore licensed debugger)
    * Compiler: xc16 v1.70
 
 
@@ -107,4 +107,11 @@ make defconfig
 
 Using MPLABX IDE, open the project and build.
 
+Using picocomm
+
+```
+sudo apt install picocom
+
+picocom -b 115200 --omap crlf /dev/ttyUSB0
+```
 

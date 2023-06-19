@@ -47,6 +47,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>../config/project_setting.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -93,6 +94,13 @@
         <itemPath>../third_party/FreeRTOS/tasks.c</itemPath>
         <itemPath>../third_party/FreeRTOS/timers.c</itemPath>
       </logicalFolder>
+      <logicalFolder name="f2" displayName="FreeRTOS-Plus-CLI" projectFiles="true">
+        <itemPath>../third_party/FreeRTOS-Plus-CLI/FreeRTOS_CLI.c</itemPath>
+        <itemPath>../third_party/FreeRTOS-Plus-CLI/FreeRTOS_CLI.h</itemPath>
+        <itemPath>../third_party/FreeRTOS-Plus-CLI/cli.c</itemPath>
+        <itemPath>../third_party/FreeRTOS-Plus-CLI/cli.h</itemPath>
+        <itemPath>../third_party/FreeRTOS-Plus-CLI/Kconfig</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -105,6 +113,7 @@
     <Elem>../third_party/FreeRTOS</Elem>
     <Elem>../app</Elem>
     <Elem>../config</Elem>
+    <Elem>../third_party/FreeRTOS-Plus-CLI</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -114,9 +123,9 @@
         <targetDevice>dsPIC33FJ128MC706A</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>PK3OBPlatformTool</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion>2.10</languageToolchainVersion>
+        <languageToolchainVersion>1.70</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <packs>
@@ -127,7 +136,7 @@
       <compileType>
         <linkerTool>
           <linkerLibItems>
-            <linkerLibFileItem>/opt/microchip/xc16/v2.10/lib/libdsp-elf.a</linkerLibFileItem>
+            <linkerLibFileItem>/opt/microchip/xc16/v1.70/lib/libdsp-elf.a</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
         <archiverTool>
@@ -150,10 +159,21 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
-      <item path="../config/generated/autoconf.h" ex="true" overriding="false">
+      <item path="../config/generated/autoconf.h" ex="false" overriding="false">
+        <C30>
+        </C30>
+        <C30-AR>
+        </C30-AR>
+        <C30-AS>
+        </C30-AS>
+        <C30-CO>
+        </C30-CO>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
       </item>
       <C30>
-        <property key="cast-align" value="false"/>
         <property key="code-model" value="default"/>
         <property key="const-model" value="default"/>
         <property key="data-model" value="default"/>
@@ -168,9 +188,8 @@
         <property key="enable-short-double" value="false"/>
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
-        <property key="expand-pragma-config" value="false"/>
         <property key="extra-include-directories"
-                  value="..\app\bldc;..\app\driver;..\app\pcIntf;..\app\utility;..\app\utility\filter;../config;../config/generated;..\third_party\FreeRTOS\include;..\third_party\FreeRTOS\portable\MPLAB\PIC24_dsPIC"/>
+                  value="..\app\bldc;..\app\driver;..\app\pcIntf;..\app\utility;..\app\utility\filter;../config;../config/generated;..\third_party\FreeRTOS\include;..\third_party\FreeRTOS\portable\MPLAB\PIC24_dsPIC;..\third_party\FreeRTOS-Plus-CLI"/>
         <property key="isolate-each-function" value="false"/>
         <property key="keep-inline" value="false"/>
         <property key="oXC16gcc-align-arr" value="false"/>
@@ -219,7 +238,6 @@
       </C30-AS>
       <C30-CO>
         <property key="coverage-enable" value=""/>
-        <property key="stack-guidance" value="false"/>
       </C30-CO>
       <C30-LD>
         <property key="additional-options-use-response-files" value="false"/>
@@ -269,7 +287,6 @@
         <appendMe value="-lq"/>
       </C30-LD>
       <C30Global>
-        <property key="combine-sourcefiles" value="false"/>
         <property key="common-include-directories" value=""/>
         <property key="dual-boot-partition" value="0"/>
         <property key="fast-math" value="false"/>
@@ -284,15 +301,13 @@
         <property key="relaxed-math" value="false"/>
         <property key="save-temps" value="false"/>
       </C30Global>
-      <Tool>
+      <PK3OBPlatformTool>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
         <property key="ToolFirmwareFilePath"
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
-        <property key="debugoptions.debug-startup" value="Use system settings"/>
-        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
-        <property key="lastid" value=""/>
+        <property key="firmware.download.all" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
         <property key="memories.dataflash" value="true"/>
@@ -315,7 +330,7 @@
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="false"/>
         <property key="voltagevalue" value="3.25"/>
-      </Tool>
+      </PK3OBPlatformTool>
     </conf>
   </confs>
 </configurationDescriptor>

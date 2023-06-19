@@ -34,6 +34,7 @@
 #pragma config ICS = PGD1               // Comm Channel Select (Communicate on PGC1/EMUC1 and PGD1/EMUD1)
 #pragma config JTAGEN = OFF             // JTAG Port Enable (JTAG is Disabled)
 
+#include "autoconf.h"
 #include "FreeRTOS.h"
 #include "task.h"
 
@@ -46,6 +47,8 @@
 #include "pc_interface.h"
 #include "drv_timer.h"
 #include "drv_adc.h"
+
+#include "cli.h"
 
 /*!
  * \brief  This function initializes the core clock
@@ -131,16 +134,16 @@ int main(void)
     if(DRV_UART_ERR_NONE != DrvUart_Init()) {
         configASSERT(0);
     }
-    if(PCINTERFACE_NOERROR != PcInf_Init()) {
-        configASSERT(0);
-    }
 
-    BLDC_init();
+//    BLDC_init();
 
     xTaskCreate( PrvTest, "Tst", configMINIMAL_STACK_SIZE*2, NULL, configTASK_PRIORITY_TEST, NULL );
 
-    vTaskStartScheduler();
+#if CONFIG_USE_CLI
+    CLI_init();
+#endif
 
+    vTaskStartScheduler();
     
     /*
      * It never reach here.
