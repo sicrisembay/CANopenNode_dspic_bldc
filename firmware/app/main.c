@@ -49,6 +49,7 @@
 #include "drv_adc.h"
 
 #include "cli.h"
+#include "core/cmd_core.h"
 
 /*!
  * \brief  This function initializes the core clock
@@ -141,6 +142,10 @@ int main(void)
 
 #if CONFIG_USE_CLI
     CLI_init();
+#endif
+
+#if CONFIG_CORE_TEST_CMD
+    CORE_CMD_init();
 #endif
 
     vTaskStartScheduler();

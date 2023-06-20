@@ -1,0 +1,11 @@
+menu "Core Configuration"
+    menuconfig CORE_TEST_CMD
+        depends on USE_CLI
+        bool "Test"
+
+        if CORE_TEST_CMD
+            config CORE_CMD_RESET
+                bool "reset"
+                default y
+        endif # CORE_TEST_CMD
+endmenu # Core Configuration

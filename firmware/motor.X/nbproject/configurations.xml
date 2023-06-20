@@ -6,6 +6,11 @@
         <itemPath>../app/bldc/bldc.c</itemPath>
         <itemPath>../app/bldc/bldc.h</itemPath>
       </logicalFolder>
+      <logicalFolder name="f6" displayName="core" projectFiles="true">
+        <itemPath>../app/core/Kconfig</itemPath>
+        <itemPath>../app/core/cmd_core.c</itemPath>
+        <itemPath>../app/core/cmd_core.h</itemPath>
+      </logicalFolder>
       <logicalFolder name="f4" displayName="driver" projectFiles="true">
         <logicalFolder name="f1" displayName="spi" projectFiles="true">
           <itemPath>../app/driver/spi/drv_spi.c</itemPath>
@@ -307,7 +312,6 @@
         <property key="ToolFirmwareFilePath"
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
-        <property key="firmware.download.all" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
         <property key="memories.dataflash" value="true"/>

@@ -104,8 +104,9 @@ static void commandConsoleTask(void * pvParam)
             if( rxChar == '\r' ) {
                 /* Ignore carriage returns. */\
 
-            } else if( rxChar == '\b' ) {
+            } else if(( rxChar == 0x08 ) || (rxChar == 0x7F)) {
                 /*
+                 * Note: Keyboard backspace sends ascii 0x08 or 0x7F, depending on some settings
                  * Backspace was pressed.  Erase the last character in the input
                  * buffer - if there are any
                  */
