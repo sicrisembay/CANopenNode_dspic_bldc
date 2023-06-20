@@ -7,5 +7,8 @@ menu "Core Configuration"
             config CORE_CMD_RESET
                 bool "reset"
                 default y
+            config CORE_CMD_TASKSTAT
+                bool "task_stat"
+                default y
         endif # CORE_TEST_CMD
 endmenu # Core Configuration

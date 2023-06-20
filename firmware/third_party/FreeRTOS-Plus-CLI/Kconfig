@@ -9,7 +9,7 @@ menuconfig USE_CLI
 
         config CLI_TASK_STACK_SZ
             int "Task Stack Size"
-            default 256
+            default 384
 
         config CLI_COMMAND_MAX_OUTPUT_SIZE
             int "Buffer size for CLI output"
