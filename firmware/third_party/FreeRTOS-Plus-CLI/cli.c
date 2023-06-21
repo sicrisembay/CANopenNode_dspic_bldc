@@ -3,6 +3,7 @@
 #if CONFIG_USE_CLI
 
 #include "stdbool.h"
+#include "stdio.h"
 #include "string.h"
 #include "FreeRTOS.h"
 #include "task.h"
@@ -34,6 +35,9 @@ static void commandConsoleTask(void * pvParam)
 
     output_str_buf = FreeRTOS_CLIGetOutputBuffer();
 
+    sprintf(output_str_buf, "\r\n\r\nReset Reason: 0x%04x", RCON);
+    RCON = 0x0000;
+    DrvUart_Write(output_str_buf, strlen(output_str_buf));
     DrvUart_Write(welcomeString, strlen(welcomeString));
     DrvUart_Write(strPrompt, strlen(strPrompt));
 
